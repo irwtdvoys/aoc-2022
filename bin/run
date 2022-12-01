@@ -1,0 +1,49 @@
+#!/usr/bin/env php
+<?php
+	use App\CalorieCounting;
+
+	ini_set("memory_limit", "256M");
+
+	const ROOT = __DIR__ . "/../";
+
+	require_once(ROOT . "bin/init.php");
+
+	// ./bin/run --day 1 --override example --verbose
+	// ./bin/run --day 1 --override example --verbose --time
+	// ./bin/run -d=1 -o=example -v
+
+	$helpers = [
+		1 => CalorieCounting::class,
+	];
+
+	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
+
+	$day = (int)($options['day'] ?? $options['d'] ?? null);
+	$override = $options['override'] ?? $options['o'] ?? null;
+	$verbose = isset($options['verbose']) || isset($options['v']);
+	$time = isset($options['time']) || isset($options['t']);
+
+	if (!isset($helpers[$day]))
+	{
+		throw new Exception("Day " . $day . " missing from config");
+	}
+
+	$start = hrtime(true);
+
+	(new $helpers[$day](
+		$day,
+		$verbose,
+		isset($override) ? ROOT . "data/" . str_pad($day, 2, "0", STR_PAD_LEFT) . "/" . $override : null
+	))
+		->run()
+		->output()
+	;
+
+	$end = hrtime(true);
+
+	if ($time)
+	{
+		$executionTime = $end - $start;
+		echo(($executionTime / 1000000) . "ms" . PHP_EOL);
+	}
+?>
