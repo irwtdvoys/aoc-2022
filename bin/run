@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 	use App\CalorieCounting;
+	use App\RockPaperScissors;
 
 	ini_set("memory_limit", "256M");
 
@@ -14,6 +15,7 @@
 
 	$helpers = [
 		1 => CalorieCounting::class,
+		2 => RockPaperScissors::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
