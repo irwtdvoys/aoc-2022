@@ -20,23 +20,23 @@
 		public function contained(): bool
 		{
 			return (
-					$this->ranges[0]->min >= $this->ranges[1]->min &&
-					$this->ranges[0]->max <= $this->ranges[1]->max
-				) || (
-					$this->ranges[1]->min >= $this->ranges[0]->min &&
-					$this->ranges[1]->max <= $this->ranges[0]->max
-				);
+				$this->ranges[0]->min >= $this->ranges[1]->min &&
+				$this->ranges[0]->max <= $this->ranges[1]->max
+			) || (
+				$this->ranges[1]->min >= $this->ranges[0]->min &&
+				$this->ranges[1]->max <= $this->ranges[0]->max
+			);
 		}
 
 		public function overlaps(): bool
 		{
 			return (
-					$this->ranges[1]->min <= $this->ranges[0]->max &&
-					$this->ranges[1]->max >= $this->ranges[0]->min
-				) || (
-					$this->ranges[0]->min <= $this->ranges[1]->max &&
-					$this->ranges[0]->max >= $this->ranges[1]->min
-				);
+				$this->ranges[1]->min <= $this->ranges[0]->max &&
+				$this->ranges[1]->max >= $this->ranges[0]->min
+			) || (
+				$this->ranges[0]->min <= $this->ranges[1]->max &&
+				$this->ranges[0]->max >= $this->ranges[1]->min
+			);
 		}
 	}
 ?>
