@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 	use App\CalorieCounting;
+	use App\CampCleanup;
 	use App\RockPaperScissors;
 	use App\RucksackReorganization;
 
@@ -17,7 +18,8 @@
 	$helpers = [
 		1 => CalorieCounting::class,
 		2 => RockPaperScissors::class,
-		3 => RucksackReorganization::class
+		3 => RucksackReorganization::class,
+		4 => CampCleanup::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
