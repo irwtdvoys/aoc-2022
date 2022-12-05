@@ -20,3 +20,6 @@ Array intersect dealt with most of the task, then a method to tweak the result o
 
 Not much to say here, just a couple of if statements... A bit of regex for the parsing I suppose.
 
+##### Day 05
+
+Parsing the data was the main time sink here, also my standard load method trims so that caused issues as well.
