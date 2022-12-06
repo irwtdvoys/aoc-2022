@@ -1,5 +1,4 @@
 <?php
-
 	namespace App\SupplyStacks;
 
 	class Step
