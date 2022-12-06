@@ -23,3 +23,7 @@ Not much to say here, just a couple of if statements... A bit of regex for the p
 ##### Day 05
 
 Parsing the data was the main time sink here, also my standard load method trims so that caused issues as well.
+
+##### Day 06
+
+Unusually simple. I assume it's the basis for future tasks.
