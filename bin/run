@@ -2,6 +2,7 @@
 <?php
 	use App\CalorieCounting;
 	use App\CampCleanup;
+	use App\NoSpaceLeftOnDevice;
 	use App\RockPaperScissors;
 	use App\RucksackReorganization;
 	use App\SupplyStacks;
@@ -23,7 +24,8 @@
 		3 => RucksackReorganization::class,
 		4 => CampCleanup::class,
 		5 => SupplyStacks::class,
-		6 => TuningTrouble::class
+		6 => TuningTrouble::class,
+		7 => NoSpaceLeftOnDevice::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
