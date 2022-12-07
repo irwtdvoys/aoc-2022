@@ -27,3 +27,7 @@ Parsing the data was the main time sink here, also my standard load method trims
 ##### Day 06
 
 Unusually simple. I assume it's the basis for future tasks.
+
+##### Day 07
+
+Used a nested data structure with reference to parent object. Once the data was loaded the tasks were really straight forward.
