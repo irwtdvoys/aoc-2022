@@ -31,3 +31,7 @@ Unusually simple. I assume it's the basis for future tasks.
 ##### Day 07
 
 Used a nested data structure with reference to parent object. Once the data was loaded the tasks were really straight forward.
+
+##### Day 08
+
+Getting worried about the difficulty spike this weekend. Nothing really of note today.

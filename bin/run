@@ -6,6 +6,7 @@
 	use App\RockPaperScissors;
 	use App\RucksackReorganization;
 	use App\SupplyStacks;
+	use App\TreetopTreeHouse;
 	use App\TuningTrouble;
 
 	ini_set("memory_limit", "256M");
@@ -25,7 +26,8 @@
 		4 => CampCleanup::class,
 		5 => SupplyStacks::class,
 		6 => TuningTrouble::class,
-		7 => NoSpaceLeftOnDevice::class
+		7 => NoSpaceLeftOnDevice::class,
+		8 => TreetopTreeHouse::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
