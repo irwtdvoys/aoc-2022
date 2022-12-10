@@ -39,3 +39,7 @@ Getting worried about the difficulty spike this weekend. Nothing really of note 
 ##### Day 09
 
 Had to do a small update for part 2 to allow any number of knots.
+
+##### Day 10
+
+Only way I could solve the delay in command execution was to calculate the execution cycles up front and then work through the cycles. This solution meant part 2 was pretty easy.
