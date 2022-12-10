@@ -2,6 +2,7 @@
 <?php
 	use App\CalorieCounting;
 	use App\CampCleanup;
+	use App\CathodeRayTube;
 	use App\NoSpaceLeftOnDevice;
 	use App\RockPaperScissors;
 	use App\RopeBridge;
@@ -29,7 +30,8 @@
 		6 => TuningTrouble::class,
 		7 => NoSpaceLeftOnDevice::class,
 		8 => TreetopTreeHouse::class,
-		9 => RopeBridge::class
+		9 => RopeBridge::class,
+		10 => CathodeRayTube::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
