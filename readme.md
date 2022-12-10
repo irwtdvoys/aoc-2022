@@ -35,3 +35,7 @@ Used a nested data structure with reference to parent object. Once the data was 
 ##### Day 08
 
 Getting worried about the difficulty spike this weekend. Nothing really of note today.
+
+##### Day 09
+
+Had to do a small update for part 2 to allow any number of knots.
