@@ -43,3 +43,7 @@ Had to do a small update for part 2 to allow any number of knots.
 ##### Day 10
 
 Only way I could solve the delay in command execution was to calculate the execution cycles up front and then work through the cycles. This solution meant part 2 was pretty easy.
+
+##### Day 11
+
+Fun task, went to the trouble of upgrading the LCM method from my support library to allow more than two parameters, only to realise they were all prime and I could have gotten away with an `array_product` instead!

@@ -59,7 +59,7 @@
 		private function coords(): Position2d
 		{
 			$y = floor($this->cycle / self::DISPLAY_X);
-			$x = ($this->cycle - 1) - ($y * self::DISPLAY_X);
+			$x = ($this->cycle % self::DISPLAY_X) - 1;
 
 			return new Position2d($x, $y);
 		}
