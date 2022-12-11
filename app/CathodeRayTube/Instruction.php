@@ -3,7 +3,6 @@
 
 	class Instruction
 	{
-
 		public string $operation;
 		public ?int $value = null;
 
