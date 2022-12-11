@@ -16,7 +16,7 @@
 		}
 	],
     "require": {
-        "cruxoft/bolt-core": "^0.10.0",
+        "cruxoft/bolt-core": "dev-develop",
         "cruxoft/logbook": "^0.1.3",
 		"cruxoft/aoc-helper": "dev-develop",
         "vlucas/phpdotenv": "^5.4"
