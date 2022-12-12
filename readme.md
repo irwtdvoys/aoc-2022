@@ -47,3 +47,7 @@ Only way I could solve the delay in command execution was to calculate the execu
 ##### Day 11
 
 Fun task, went to the trouble of upgrading the LCM method from my support library to allow more than two parameters, only to realise they were all prime and I could have gotten away with an `array_product` instead!
+
+##### Day 12
+
+Did a full BFS for the first part and was able to reuse it in reverse for part two. Just searched the results for the shortest `a` location.
