@@ -3,6 +3,7 @@
 	use App\CalorieCounting;
 	use App\CampCleanup;
 	use App\CathodeRayTube;
+	use App\HillClimbingAlgorithm;
 	use App\MonkeyInTheMiddle;
 	use App\NoSpaceLeftOnDevice;
 	use App\RockPaperScissors;
@@ -33,7 +34,8 @@
 		8 => TreetopTreeHouse::class,
 		9 => RopeBridge::class,
 		10 => CathodeRayTube::class,
-		11 => MonkeyInTheMiddle::class
+		11 => MonkeyInTheMiddle::class,
+		12 => HillClimbingAlgorithm::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
