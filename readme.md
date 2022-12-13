@@ -51,3 +51,7 @@ Fun task, went to the trouble of upgrading the LCM method from my support librar
 ##### Day 12
 
 Did a full BFS for the first part and was able to reuse it in reverse for part two. Just searched the results for the shortest `a` location.
+
+##### Day 13
+
+Had some trouble with part 1, misunderstood that checking stops on arrays once a successfull match is found. Spaceship operator came in handy then! Changed the comparison method in part 2 to allow it to be used in a `usort`, part 2 might have looked cleaner if I kept the packets encoded so the search was more efficient.

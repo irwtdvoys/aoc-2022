@@ -18,7 +18,7 @@
 		{
 			parent::__construct($day, $verbose);
 
-			$raw = parent::load($override, "rb");
+			$raw = parent::load($override);
 
 			$lines = explode(PHP_EOL, $raw);
 
