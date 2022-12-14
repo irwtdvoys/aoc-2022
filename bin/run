@@ -7,6 +7,7 @@
 	use App\HillClimbingAlgorithm;
 	use App\MonkeyInTheMiddle;
 	use App\NoSpaceLeftOnDevice;
+	use App\RegolithReservoir;
 	use App\RockPaperScissors;
 	use App\RopeBridge;
 	use App\RucksackReorganization;
@@ -37,7 +38,8 @@
 		10 => CathodeRayTube::class,
 		11 => MonkeyInTheMiddle::class,
 		12 => HillClimbingAlgorithm::class,
-		13 => DistressSignal::class
+		13 => DistressSignal::class,
+		14 => RegolithReservoir::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
