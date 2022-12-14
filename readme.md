@@ -55,3 +55,7 @@ Did a full BFS for the first part and was able to reuse it in reverse for part t
 ##### Day 13
 
 Had some trouble with part 1, misunderstood that checking stops on arrays once a successfull match is found. Spaceship operator came in handy then! Changed the comparison method in part 2 to allow it to be used in a `usort`, part 2 might have looked cleaner if I kept the packets encoded so the search was more efficient.
+
+##### Day 14
+
+Had to resort to a couple of cheeky throws to bail out when the sand reached its end goal but on the hole straight forward.
