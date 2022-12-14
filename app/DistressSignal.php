@@ -94,6 +94,4 @@
 			return $result;
 		}
 	}
-
-	// 739 low
 ?>
