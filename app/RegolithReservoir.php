@@ -5,6 +5,7 @@
 	use AoC\Result;
 	use AoC\Utils\Position2d;
 	use AoC\Utils\Range;
+	use AoC\Utils\Styling;
 	use App\RegolithReservoir\Tile;
 	use Exception;
 
@@ -79,11 +80,21 @@
 		{
 			for ($y = $this->rangeY->min; $y <= $this->rangeY->max; $y++)
 			{
-				echo(str_pad($y, strlen($this->rangeY->max), " ", STR_PAD_LEFT) . " ");
+				echo(Styling::format([Styling::BLUE], str_pad($y, strlen($this->rangeY->max), " ", STR_PAD_LEFT) . " "));
 
 				for ($x = $this->rangeX->min; $x <= $this->rangeX->max; $x++)
 				{
-					echo(($this->cave[$x][$y] ?? Tile::Empty)->value);
+					$tile = $this->cave[$x][$y] ?? Tile::Empty;
+
+					$format = match ($tile)
+					{
+						Tile::Sand => [Styling::BG_YELLOW],
+						Tile::Entry => [Styling::BG_GREEN],
+						Tile::Wall => [Styling::BG_RED],
+						default => [],
+					};
+
+					echo(Styling::format($format, $tile->value));
 				}
 
 				echo(PHP_EOL);
@@ -175,7 +186,6 @@
 		{
 			$result = new Result(0, 0);
 
-
 			$result->part1 = $this->pour();
 
 			$this->clear();
@@ -186,8 +196,6 @@
 
 			$this->void = false;
 			$result->part2 = $this->pour() + 1;
-
-			$this->draw();
 
 			return $result;
 		}
