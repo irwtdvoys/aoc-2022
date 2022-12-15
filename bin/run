@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+	use App\BeaconExclusionZone;
 	use App\CalorieCounting;
 	use App\CampCleanup;
 	use App\CathodeRayTube;
@@ -39,7 +40,8 @@
 		11 => MonkeyInTheMiddle::class,
 		12 => HillClimbingAlgorithm::class,
 		13 => DistressSignal::class,
-		14 => RegolithReservoir::class
+		14 => RegolithReservoir::class,
+		15 => BeaconExclusionZone::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
