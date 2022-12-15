@@ -59,3 +59,7 @@ Had some trouble with part 1, misunderstood that checking stops on arrays once a
 ##### Day 14
 
 Had to resort to a couple of cheeky throws to bail out when the sand reached its end goal but on the hole straight forward.
+
+##### Day 15
+
+Made an error parsing + didn't include the sign on negative numbers. Worked for the example but spent far too long trying workout the issue. Ended up crazy efficient for part 1 so I was able to brute force part 2 in approx 40s.
