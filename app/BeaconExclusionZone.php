@@ -57,8 +57,6 @@
 				}
 			}
 
-
-			#dump($ranges);
 			$count = null;
 
 			while ($count !== 0)
@@ -127,7 +125,6 @@
 				$result->part1 += $range->count();
 			}
 
-
 			for ($y = 0; $y <= $this->max; $y++)
 			{
 				$ranges = $this->checkRow($y);
@@ -140,8 +137,6 @@
 					break;
 				}
 			}
-
-
 
 			return $result;
 		}
