@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 	use App\BeaconExclusionZone;
+	use App\BoilingBoulders;
 	use App\CalorieCounting;
 	use App\CampCleanup;
 	use App\CathodeRayTube;
@@ -43,6 +44,7 @@
 		13 => DistressSignal::class,
 		14 => RegolithReservoir::class,
 		15 => BeaconExclusionZone::class,
+		18 => BoilingBoulders::class,
 		20 => GrovePositioningSystem::class
 	];
 
