@@ -5,6 +5,7 @@
 	use App\CampCleanup;
 	use App\CathodeRayTube;
 	use App\DistressSignal;
+	use App\GrovePositioningSystem;
 	use App\HillClimbingAlgorithm;
 	use App\MonkeyInTheMiddle;
 	use App\NoSpaceLeftOnDevice;
@@ -41,7 +42,8 @@
 		12 => HillClimbingAlgorithm::class,
 		13 => DistressSignal::class,
 		14 => RegolithReservoir::class,
-		15 => BeaconExclusionZone::class
+		15 => BeaconExclusionZone::class,
+		20 => GrovePositioningSystem::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
