@@ -9,6 +9,7 @@
 	use App\GrovePositioningSystem;
 	use App\HillClimbingAlgorithm;
 	use App\MonkeyInTheMiddle;
+	use App\MonkeyMath;
 	use App\NoSpaceLeftOnDevice;
 	use App\RegolithReservoir;
 	use App\RockPaperScissors;
@@ -45,7 +46,8 @@
 		14 => RegolithReservoir::class,
 		15 => BeaconExclusionZone::class,
 		18 => BoilingBoulders::class,
-		20 => GrovePositioningSystem::class
+		20 => GrovePositioningSystem::class,
+		21 => MonkeyMath::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
