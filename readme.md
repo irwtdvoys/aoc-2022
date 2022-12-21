@@ -71,3 +71,7 @@ Nice + simple part 1. Used a flood fill BFS for part 2, I feel part 2 could be c
 ##### Day 20
 
 Used my circular linked list library to control most of the task and made good use of modulus.
+
+##### Day 21
+
+Solved part 1 keeping track of calculated values to avoid recalculating them. Recursive function to solve the for `x` (`humn`) in part 2.
