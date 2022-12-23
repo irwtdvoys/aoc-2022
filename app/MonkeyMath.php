@@ -161,7 +161,6 @@
 
 			$result->part2 = $this->calcaulate($this->monkeys['root'][$calculate], $target);
 
-
 			return $result;
 		}
 	}
