@@ -75,3 +75,7 @@ Used my circular linked list library to control most of the task and made good u
 ##### Day 21
 
 Solved part 1 keeping track of calculated values to avoid recalculating them. Recursive function to solve the for `x` (`humn`) in part 2.
+
+##### Day 23
+
+Pretty straight forward. I was already using a map for the locations rather than generating a full grid so part 2 was a case of letting it run its course for a few seconds.
