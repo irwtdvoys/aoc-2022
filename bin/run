@@ -18,6 +18,7 @@
 	use App\SupplyStacks;
 	use App\TreetopTreeHouse;
 	use App\TuningTrouble;
+	use App\UnstableDiffusion;
 
 	ini_set("memory_limit", "256M");
 
@@ -47,7 +48,8 @@
 		15 => BeaconExclusionZone::class,
 		18 => BoilingBoulders::class,
 		20 => GrovePositioningSystem::class,
-		21 => MonkeyMath::class
+		21 => MonkeyMath::class,
+		23 => UnstableDiffusion::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);
