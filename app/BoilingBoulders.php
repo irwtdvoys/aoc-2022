@@ -3,15 +3,14 @@
 
 	use AoC\Helper;
 	use AoC\Result;
+	use AoC\Utils\Dimensions3d;
 	use AoC\Utils\Position3d;
-	use AoC\Utils\Range;
-	use stdClass;
 
 	class BoilingBoulders extends Helper
 	{
 		/** @var bool[][][] */
 		public array $region;
-		public stdClass $dimensions;
+		public Dimensions3d $dimensions;
 
 		public function __construct(int $day, bool $verbose = false, string $override = null)
 		{
@@ -21,11 +20,7 @@
 
 			$coords = explode(PHP_EOL, $raw);
 
-			$this->dimensions = (object)[
-				"x" => new Range(),
-				"y" => new Range(),
-				"z" => new Range(),
-			];
+			$this->dimensions = new Dimensions3d();
 
 			foreach ($coords as $coord)
 			{
