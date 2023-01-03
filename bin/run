@@ -6,6 +6,7 @@
 	use App\CampCleanup;
 	use App\CathodeRayTube;
 	use App\DistressSignal;
+	use App\FullOfHotAir;
 	use App\GrovePositioningSystem;
 	use App\HillClimbingAlgorithm;
 	use App\MonkeyInTheMiddle;
@@ -49,7 +50,8 @@
 		18 => BoilingBoulders::class,
 		20 => GrovePositioningSystem::class,
 		21 => MonkeyMath::class,
-		23 => UnstableDiffusion::class
+		23 => UnstableDiffusion::class,
+		25 => FullOfHotAir::class
 	];
 
 	$options = getopt("d:o:vt", ["day:", "override:", "verbose", "time"]);

@@ -79,3 +79,7 @@ Solved part 1 keeping track of calculated values to avoid recalculating them. Re
 ##### Day 23
 
 Pretty straight forward. I was already using a map for the locations rather than generating a full grid so part 2 was a case of letting it run its course for a few seconds.
+
+##### Day 25
+
+Tried to use `base_convert` at first but realised pretty quickly that the numbering ruins that and just wrote the conversion methods.
